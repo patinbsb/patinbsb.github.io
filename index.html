@@ -499,6 +499,12 @@ font-display: swap;
             .flipXYX video::-webkit-media-text-track-display {
                 transform: matrix(1, 0, 0, -1, 0, 0) !important;
             }</style><style>
+            /* Hide elements with the class "hide-on-mobile" on screens 767px wide or less */
+            @media only screen and (max-width: 767px) {
+            .comp-k0med55d {
+              display: none;
+              }
+            }
             @keyframes blinkWarning {
                 0% { color: red; }
                 100% { color: white; }
